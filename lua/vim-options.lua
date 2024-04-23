@@ -5,6 +5,11 @@ vim.cmd("set shiftwidth=2")
 vim.g.mapleader = " "
 vim.opt.wrap = false
 
+-- navigate vim panes better
+vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
+vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
+vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
+vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 -- use jk to exit insert mode
 vim.keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
